@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- mybatis 映射器配置约束 -->
+
+<mapper namespace="com.upcome.user.mapper.UserMapper">
+
+
+    <resultMap id="All" type="com.upcome.user.entity.User">
+        <id property="id" javaType="String" column="id" jdbcType="VARCHAR" />
+        <result property="name" javaType="String" column="name" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <!--查询用户方法-->
+    <select id="selectUserAll" resultMap="All">
+        select * from user
+    </select>
+
+    <!--添加用户方法-->
+    <insert id="addUser" parameterType="com.upcome.user.entity.User" keyProperty="id">
+        insert into user (id,name
+        <if test="user.sex!=null">,sex</if>
+        <if test="user.age!=null">,age</if>
+        )
+        value(#{user.id},#{user.name}
+        <if test="user.sex!=null">,#{user.sex}</if>
+        <if test="user.age!=null">,#{user.age}</if>
+            )
+    </insert>
+
+</mapper>

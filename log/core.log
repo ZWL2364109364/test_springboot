@@ -1,0 +1,268 @@
+2021-02-28 10:33:14.292  INFO 9552 --- [main] com.upcome.TestSpringBootApplication     : Starting TestSpringBootApplication using Java 1.8.0_201 on LAPTOP-F9IFBC8A with PID 9552 (F:\IdeaWorkSpaces\test_springboot\target\classes started by 张文龙 in F:\IdeaWorkSpaces\test_springboot)
+2021-02-28 10:33:14.295  INFO 9552 --- [main] com.upcome.TestSpringBootApplication     : No active profile set, falling back to default profiles: default
+2021-02-28 10:33:16.568  INFO 9552 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-02-28 10:33:16.576  INFO 9552 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-28 10:33:16.576  INFO 9552 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-28 10:33:16.577  INFO 9552 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.18] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2021-02-28 10:33:16.578  INFO 9552 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.18] using APR version [1.6.5].
+2021-02-28 10:33:16.578  INFO 9552 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-02-28 10:33:16.578  INFO 9552 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-02-28 10:33:16.677  INFO 9552 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1  11 Sep 2018]
+2021-02-28 10:33:16.857  INFO 9552 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-02-28 10:33:16.857  INFO 9552 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2407 ms
+2021-02-28 10:33:17.488  INFO 9552 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-28 10:33:17.798  WARN 9552 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-02-28 10:33:18.111  INFO 9552 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-02-28 10:33:18.119  INFO 9552 --- [main] com.upcome.TestSpringBootApplication     : Started TestSpringBootApplication in 4.735 seconds (JVM running for 6.838)
+2021-02-28 10:35:57.928  INFO 9552 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-28 10:35:57.929  INFO 9552 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-02-28 10:35:57.929  INFO 9552 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-02-28 10:35:58.029  WARN 9552 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2021-02-28 10:36:08.940  INFO 9552 --- [http-nio-8080-exec-4] c.upcome.user.controller.UserController  : --------用户模块Controller：查询全部用户方法 selectUserAll 
+2021-02-28 10:36:08.940  INFO 9552 --- [http-nio-8080-exec-4] c.upcome.user.controller.UserController  : 用户模块Controller：查询全部用户方法 selectUserAll==获取数据成功User{id='', name='王五', sex='女', age='18'}
+2021-02-28 10:36:08.954 ERROR 9552 --- [http-nio-8080-exec-4] com.upcome.user.service.UserServiceImpl  : 用户模块service层：添加用户方法 addUser ==出现异常==org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.upcome.user.mapper.UserMapper.addUser
+2021-02-28 10:38:26.527  INFO 23996 --- [main] com.upcome.TestSpringBootApplication     : Starting TestSpringBootApplication using Java 1.8.0_201 on LAPTOP-F9IFBC8A with PID 23996 (F:\IdeaWorkSpaces\test_springboot\target\classes started by 张文龙 in F:\IdeaWorkSpaces\test_springboot)
+2021-02-28 10:38:26.530  INFO 23996 --- [main] com.upcome.TestSpringBootApplication     : No active profile set, falling back to default profiles: default
+2021-02-28 10:38:27.239  INFO 23996 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-02-28 10:38:27.245  INFO 23996 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-28 10:38:27.245  INFO 23996 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-28 10:38:27.246  INFO 23996 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.18] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2021-02-28 10:38:27.246  INFO 23996 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.18] using APR version [1.6.5].
+2021-02-28 10:38:27.246  INFO 23996 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-02-28 10:38:27.247  INFO 23996 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-02-28 10:38:27.250  INFO 23996 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1  11 Sep 2018]
+2021-02-28 10:38:27.327  INFO 23996 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-02-28 10:38:27.328  INFO 23996 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 759 ms
+2021-02-28 10:38:27.579  INFO 23996 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-28 10:38:27.661  WARN 23996 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-02-28 10:38:27.794  INFO 23996 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-02-28 10:38:27.801  INFO 23996 --- [main] com.upcome.TestSpringBootApplication     : Started TestSpringBootApplication in 1.624 seconds (JVM running for 3.151)
+2021-02-28 10:38:55.724  INFO 23996 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-28 10:38:55.724  INFO 23996 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-02-28 10:38:55.725  INFO 23996 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-02-28 10:38:55.787  INFO 23996 --- [http-nio-8080-exec-1] c.upcome.user.controller.UserController  : --------用户模块Controller：添加用户方法 addUser 
+2021-02-28 10:38:55.787  INFO 23996 --- [http-nio-8080-exec-1] c.upcome.user.controller.UserController  : 用户模块Controller：查询全部用户方法 selectUserAll==获取数据成功==User{id='2', name='王五', sex='女', age='18'}
+2021-02-28 10:38:55.939 ERROR 23996 --- [http-nio-8080-exec-1] com.upcome.user.service.UserServiceImpl  : 用户模块service层：添加用户方法 addUser ==出现异常==org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.builder.BuilderException: Error evaluating expression 'sex!=‘’'. Cause: org.apache.ibatis.ognl.ExpressionSyntaxException: Malformed OGNL expression: sex!=‘’ [org.apache.ibatis.ognl.TokenMgrError: Lexical error at line 1, column 6.  Encountered: "\u2018" (8216), after : ""]
+2021-02-28 10:40:31.437  INFO 19020 --- [main] com.upcome.TestSpringBootApplication     : Starting TestSpringBootApplication using Java 1.8.0_201 on LAPTOP-F9IFBC8A with PID 19020 (F:\IdeaWorkSpaces\test_springboot\target\classes started by 张文龙 in F:\IdeaWorkSpaces\test_springboot)
+2021-02-28 10:40:31.440  INFO 19020 --- [main] com.upcome.TestSpringBootApplication     : No active profile set, falling back to default profiles: default
+2021-02-28 10:40:32.154  INFO 19020 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-02-28 10:40:32.159  INFO 19020 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-28 10:40:32.160  INFO 19020 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-28 10:40:32.161  INFO 19020 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.18] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2021-02-28 10:40:32.161  INFO 19020 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.18] using APR version [1.6.5].
+2021-02-28 10:40:32.161  INFO 19020 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-02-28 10:40:32.161  INFO 19020 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-02-28 10:40:32.164  INFO 19020 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1  11 Sep 2018]
+2021-02-28 10:40:32.244  INFO 19020 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-02-28 10:40:32.245  INFO 19020 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 762 ms
+2021-02-28 10:40:32.498  INFO 19020 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-28 10:40:32.578  WARN 19020 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-02-28 10:40:32.711  INFO 19020 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-02-28 10:40:32.718  INFO 19020 --- [main] com.upcome.TestSpringBootApplication     : Started TestSpringBootApplication in 1.678 seconds (JVM running for 3.225)
+2021-02-28 10:40:46.955  INFO 8556 --- [main] com.upcome.TestSpringBootApplication     : Starting TestSpringBootApplication using Java 1.8.0_201 on LAPTOP-F9IFBC8A with PID 8556 (F:\IdeaWorkSpaces\test_springboot\target\classes started by 张文龙 in F:\IdeaWorkSpaces\test_springboot)
+2021-02-28 10:40:46.958  INFO 8556 --- [main] com.upcome.TestSpringBootApplication     : No active profile set, falling back to default profiles: default
+2021-02-28 10:40:47.729  INFO 8556 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-02-28 10:40:47.734  INFO 8556 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-28 10:40:47.735  INFO 8556 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-28 10:40:47.736  INFO 8556 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.18] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2021-02-28 10:40:47.736  INFO 8556 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.18] using APR version [1.6.5].
+2021-02-28 10:40:47.736  INFO 8556 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-02-28 10:40:47.736  INFO 8556 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-02-28 10:40:47.738  INFO 8556 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1  11 Sep 2018]
+2021-02-28 10:40:47.813  INFO 8556 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-02-28 10:40:47.813  INFO 8556 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 808 ms
+2021-02-28 10:40:48.063  INFO 8556 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-28 10:40:48.145  WARN 8556 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-02-28 10:40:48.280  INFO 8556 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-02-28 10:40:48.287  INFO 8556 --- [main] com.upcome.TestSpringBootApplication     : Started TestSpringBootApplication in 1.707 seconds (JVM running for 3.207)
+2021-02-28 10:40:52.883  INFO 8556 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-28 10:40:52.883  INFO 8556 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-02-28 10:40:52.884  INFO 8556 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-02-28 10:40:52.939  INFO 8556 --- [http-nio-8080-exec-1] c.upcome.user.controller.UserController  : --------用户模块Controller：添加用户方法 addUser 
+2021-02-28 10:40:52.939  INFO 8556 --- [http-nio-8080-exec-1] c.upcome.user.controller.UserController  : 用户模块Controller：查询全部用户方法 selectUserAll==获取数据成功==User{id='2', name='王五', sex='女', age='18'}
+2021-02-28 10:40:52.960 ERROR 8556 --- [http-nio-8080-exec-1] com.upcome.user.service.UserServiceImpl  : 用户模块service层：添加用户方法 addUser ==出现异常==org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.binding.BindingException: Parameter 'sex' not found. Available parameters are [user, param1]
+2021-02-28 10:41:41.194  INFO 23684 --- [main] com.upcome.TestSpringBootApplication     : Starting TestSpringBootApplication using Java 1.8.0_201 on LAPTOP-F9IFBC8A with PID 23684 (F:\IdeaWorkSpaces\test_springboot\target\classes started by 张文龙 in F:\IdeaWorkSpaces\test_springboot)
+2021-02-28 10:41:41.196  INFO 23684 --- [main] com.upcome.TestSpringBootApplication     : No active profile set, falling back to default profiles: default
+2021-02-28 10:41:41.908  INFO 23684 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-02-28 10:41:41.913  INFO 23684 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-28 10:41:41.914  INFO 23684 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-28 10:41:41.915  INFO 23684 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.18] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2021-02-28 10:41:41.915  INFO 23684 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.18] using APR version [1.6.5].
+2021-02-28 10:41:41.915  INFO 23684 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-02-28 10:41:41.915  INFO 23684 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-02-28 10:41:41.918  INFO 23684 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1  11 Sep 2018]
+2021-02-28 10:41:41.994  INFO 23684 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-02-28 10:41:41.994  INFO 23684 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 754 ms
+2021-02-28 10:41:42.240  INFO 23684 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-28 10:41:42.322  WARN 23684 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-02-28 10:41:42.453  INFO 23684 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-02-28 10:41:42.460  INFO 23684 --- [main] com.upcome.TestSpringBootApplication     : Started TestSpringBootApplication in 1.614 seconds (JVM running for 3.125)
+2021-02-28 10:41:55.327  INFO 23684 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-28 10:41:55.328  INFO 23684 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-02-28 10:41:55.329  INFO 23684 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-02-28 10:41:55.381  INFO 23684 --- [http-nio-8080-exec-1] c.upcome.user.controller.UserController  : --------用户模块Controller：添加用户方法 addUser 
+2021-02-28 10:41:55.381  INFO 23684 --- [http-nio-8080-exec-1] c.upcome.user.controller.UserController  : 用户模块Controller：查询全部用户方法 selectUserAll==获取数据成功==User{id='2', name='王五', sex='女', age='18'}
+2021-02-28 10:41:55.414  INFO 23684 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-02-28 10:41:55.430  WARN 23684 --- [http-nio-8080-exec-1] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2021-02-28 10:41:55.767  INFO 23684 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-02-28 10:41:55.773 DEBUG 23684 --- [http-nio-8080-exec-1] c.upcome.user.mapper.UserMapper.addUser  : ==>  Preparing: insert into user (id,name ,sex ,age value(?,? ,? ,? ) ) 
+2021-02-28 10:41:55.793 DEBUG 23684 --- [http-nio-8080-exec-1] c.upcome.user.mapper.UserMapper.addUser  : ==> Parameters: 2(String), 王五(String), 女(String), 18(String)
+2021-02-28 10:41:55.871 ERROR 23684 --- [http-nio-8080-exec-1] com.upcome.user.service.UserServiceImpl  : 用户模块service层：添加用户方法 addUser ==出现异常==org.springframework.jdbc.BadSqlGrammarException: 
+### Error updating database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'value('2','王五'
+             
+                ,'女'
+             
+          ' at line 8
+### The error may involve com.upcome.user.mapper.UserMapper.addUser-Inline
+### The error occurred while setting parameters
+### SQL: insert into user (id,name                       ,sex                                 ,age                   value(?,?                               ,?                                             ,?                           )         )
+### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'value('2','王五'
+             
+                ,'女'
+             
+          ' at line 8
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'value('2','王五'
+             
+                ,'女'
+             
+          ' at line 8
+2021-02-28 10:44:27.906  INFO 9768 --- [main] com.upcome.TestSpringBootApplication     : Starting TestSpringBootApplication using Java 1.8.0_201 on LAPTOP-F9IFBC8A with PID 9768 (F:\IdeaWorkSpaces\test_springboot\target\classes started by 张文龙 in F:\IdeaWorkSpaces\test_springboot)
+2021-02-28 10:44:27.908  INFO 9768 --- [main] com.upcome.TestSpringBootApplication     : No active profile set, falling back to default profiles: default
+2021-02-28 10:44:28.638  INFO 9768 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-02-28 10:44:28.643  INFO 9768 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-28 10:44:28.644  INFO 9768 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-28 10:44:28.645  INFO 9768 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.18] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2021-02-28 10:44:28.645  INFO 9768 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.18] using APR version [1.6.5].
+2021-02-28 10:44:28.645  INFO 9768 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-02-28 10:44:28.645  INFO 9768 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-02-28 10:44:28.649  INFO 9768 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1  11 Sep 2018]
+2021-02-28 10:44:28.725  INFO 9768 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-02-28 10:44:28.725  INFO 9768 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 777 ms
+2021-02-28 10:44:28.981  INFO 9768 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-28 10:44:29.063  WARN 9768 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-02-28 10:44:29.199  INFO 9768 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-02-28 10:44:29.206  INFO 9768 --- [main] com.upcome.TestSpringBootApplication     : Started TestSpringBootApplication in 1.657 seconds (JVM running for 3.158)
+2021-02-28 10:44:33.281  INFO 9768 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-28 10:44:33.281  INFO 9768 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-02-28 10:44:33.281  INFO 9768 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-02-28 10:44:33.345  INFO 9768 --- [http-nio-8080-exec-1] c.upcome.user.controller.UserController  : --------用户模块Controller：添加用户方法 addUser 
+2021-02-28 10:44:33.345  INFO 9768 --- [http-nio-8080-exec-1] c.upcome.user.controller.UserController  : 用户模块Controller：查询全部用户方法 selectUserAll==获取数据成功==User{id='2', name='王五', sex='女', age='18'}
+2021-02-28 10:44:33.378  INFO 9768 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-02-28 10:44:33.380  WARN 9768 --- [http-nio-8080-exec-1] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2021-02-28 10:44:33.514  INFO 9768 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-02-28 10:44:33.518 DEBUG 9768 --- [http-nio-8080-exec-1] c.upcome.user.mapper.UserMapper.addUser  : ==>  Preparing: insert into user (id,name ,sex ,age value(?,? ,? ,? ) ) 
+2021-02-28 10:44:33.537 DEBUG 9768 --- [http-nio-8080-exec-1] c.upcome.user.mapper.UserMapper.addUser  : ==> Parameters: 2(String), 王五(String), 女(String), 18(String)
+2021-02-28 10:44:33.585 ERROR 9768 --- [http-nio-8080-exec-1] com.upcome.user.service.UserServiceImpl  : 用户模块service层：添加用户方法 addUser ==出现异常==org.springframework.jdbc.BadSqlGrammarException: 
+### Error updating database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'value('2','王五'
+         ,'女' 
+         ,'18' 
+            )
+        )' at line 4
+### The error may involve com.upcome.user.mapper.UserMapper.addUser-Inline
+### The error occurred while setting parameters
+### SQL: insert into user (id,name          ,sex           ,age          value(?,?          ,?           ,?              )         )
+### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'value('2','王五'
+         ,'女' 
+         ,'18' 
+            )
+        )' at line 4
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'value('2','王五'
+         ,'女' 
+         ,'18' 
+            )
+        )' at line 4
+2021-02-28 10:45:54.663  INFO 9768 --- [http-nio-8080-exec-3] c.upcome.user.controller.UserController  : --------用户模块Controller：添加用户方法 addUser 
+2021-02-28 10:45:54.663  INFO 9768 --- [http-nio-8080-exec-3] c.upcome.user.controller.UserController  : 用户模块Controller：查询全部用户方法 selectUserAll==获取数据成功==User{id='2', name='王五', sex='null', age='null'}
+2021-02-28 10:45:54.665 DEBUG 9768 --- [http-nio-8080-exec-3] c.upcome.user.mapper.UserMapper.addUser  : ==>  Preparing: insert into user (id,name value(?,? ) ) 
+2021-02-28 10:45:54.666 DEBUG 9768 --- [http-nio-8080-exec-3] c.upcome.user.mapper.UserMapper.addUser  : ==> Parameters: 2(String), 王五(String)
+2021-02-28 10:45:54.667 ERROR 9768 --- [http-nio-8080-exec-3] com.upcome.user.service.UserServiceImpl  : 用户模块service层：添加用户方法 addUser ==出现异常==org.springframework.jdbc.BadSqlGrammarException: 
+### Error updating database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'value('2','王五'
+         
+         
+            )
+        )' at line 4
+### The error may involve com.upcome.user.mapper.UserMapper.addUser-Inline
+### The error occurred while setting parameters
+### SQL: insert into user (id,name                             value(?,?                                 )         )
+### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'value('2','王五'
+         
+         
+            )
+        )' at line 4
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'value('2','王五'
+         
+         
+            )
+        )' at line 4
+2021-02-28 10:46:04.398  INFO 9768 --- [http-nio-8080-exec-4] c.upcome.user.controller.UserController  : --------用户模块Controller：添加用户方法 addUser 
+2021-02-28 10:46:04.399  INFO 9768 --- [http-nio-8080-exec-4] c.upcome.user.controller.UserController  : 用户模块Controller：查询全部用户方法 selectUserAll==获取数据成功==User{id='2', name='王五', sex='null', age='null'}
+2021-02-28 10:46:04.400 DEBUG 9768 --- [http-nio-8080-exec-4] c.upcome.user.mapper.UserMapper.addUser  : ==>  Preparing: insert into user (id,name value(?,? ) ) 
+2021-02-28 10:46:04.401 DEBUG 9768 --- [http-nio-8080-exec-4] c.upcome.user.mapper.UserMapper.addUser  : ==> Parameters: 2(String), 王五(String)
+2021-02-28 10:46:04.402 ERROR 9768 --- [http-nio-8080-exec-4] com.upcome.user.service.UserServiceImpl  : 用户模块service层：添加用户方法 addUser ==出现异常==org.springframework.jdbc.BadSqlGrammarException: 
+### Error updating database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'value('2','王五'
+         
+         
+            )
+        )' at line 4
+### The error may involve com.upcome.user.mapper.UserMapper.addUser-Inline
+### The error occurred while setting parameters
+### SQL: insert into user (id,name                             value(?,?                                 )         )
+### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'value('2','王五'
+         
+         
+            )
+        )' at line 4
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'value('2','王五'
+         
+         
+            )
+        )' at line 4
+2021-02-28 10:46:54.220  INFO 20292 --- [main] com.upcome.TestSpringBootApplication     : Starting TestSpringBootApplication using Java 1.8.0_201 on LAPTOP-F9IFBC8A with PID 20292 (F:\IdeaWorkSpaces\test_springboot\target\classes started by 张文龙 in F:\IdeaWorkSpaces\test_springboot)
+2021-02-28 10:46:54.223  INFO 20292 --- [main] com.upcome.TestSpringBootApplication     : No active profile set, falling back to default profiles: default
+2021-02-28 10:46:54.955  INFO 20292 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-02-28 10:46:54.961  INFO 20292 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-28 10:46:54.961  INFO 20292 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-28 10:46:54.963  INFO 20292 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.18] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2021-02-28 10:46:54.963  INFO 20292 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.18] using APR version [1.6.5].
+2021-02-28 10:46:54.963  INFO 20292 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-02-28 10:46:54.963  INFO 20292 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-02-28 10:46:54.966  INFO 20292 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1  11 Sep 2018]
+2021-02-28 10:46:55.045  INFO 20292 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-02-28 10:46:55.045  INFO 20292 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 769 ms
+2021-02-28 10:46:55.320  INFO 20292 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-28 10:46:55.418  WARN 20292 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-02-28 10:46:55.572  INFO 20292 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-02-28 10:46:55.580  INFO 20292 --- [main] com.upcome.TestSpringBootApplication     : Started TestSpringBootApplication in 1.745 seconds (JVM running for 3.241)
+2021-02-28 10:47:01.926  INFO 20292 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-28 10:47:01.926  INFO 20292 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-02-28 10:47:01.927  INFO 20292 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-02-28 10:47:01.981  INFO 20292 --- [http-nio-8080-exec-1] c.upcome.user.controller.UserController  : --------用户模块Controller：添加用户方法 addUser 
+2021-02-28 10:47:01.981  INFO 20292 --- [http-nio-8080-exec-1] c.upcome.user.controller.UserController  : 用户模块Controller：查询全部用户方法 selectUserAll==获取数据成功==User{id='2', name='王五', sex='null', age='null'}
+2021-02-28 10:47:02.014  INFO 20292 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-02-28 10:47:02.016  WARN 20292 --- [http-nio-8080-exec-1] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2021-02-28 10:47:02.148  INFO 20292 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-02-28 10:47:02.152 DEBUG 20292 --- [http-nio-8080-exec-1] c.upcome.user.mapper.UserMapper.addUser  : ==>  Preparing: insert into user (id,name ) value(?,? ) 
+2021-02-28 10:47:02.172 DEBUG 20292 --- [http-nio-8080-exec-1] c.upcome.user.mapper.UserMapper.addUser  : ==> Parameters: 2(String), 王五(String)
+2021-02-28 10:47:02.183 DEBUG 20292 --- [http-nio-8080-exec-1] c.upcome.user.mapper.UserMapper.addUser  : <==    Updates: 1
+2021-02-28 10:47:39.277  INFO 20292 --- [http-nio-8080-exec-3] c.upcome.user.controller.UserController  : --------用户模块Controller：添加用户方法 addUser 
+2021-02-28 10:47:39.277  INFO 20292 --- [http-nio-8080-exec-3] c.upcome.user.controller.UserController  : 用户模块Controller：查询全部用户方法 selectUserAll==获取数据成功==User{id='3', name='赵六', sex='女', age='18'}
+2021-02-28 10:47:39.279 DEBUG 20292 --- [http-nio-8080-exec-3] c.upcome.user.mapper.UserMapper.addUser  : ==>  Preparing: insert into user (id,name ,sex ,age ) value(?,? ,? ,? ) 
+2021-02-28 10:47:39.279 DEBUG 20292 --- [http-nio-8080-exec-3] c.upcome.user.mapper.UserMapper.addUser  : ==> Parameters: 3(String), 赵六(String), 女(String), 18(String)
+2021-02-28 10:47:39.281 DEBUG 20292 --- [http-nio-8080-exec-3] c.upcome.user.mapper.UserMapper.addUser  : <==    Updates: 1
+2021-02-28 10:47:57.056  INFO 20292 --- [http-nio-8080-exec-2] c.upcome.user.controller.UserController  : --------用户模块Controller：添加用户方法 addUser 
+2021-02-28 10:47:57.057  INFO 20292 --- [http-nio-8080-exec-2] c.upcome.user.controller.UserController  : 用户模块Controller：查询全部用户方法 selectUserAll==获取数据成功==User{id='3', name='赵六', sex='女', age='null'}
+2021-02-28 10:47:57.060 DEBUG 20292 --- [http-nio-8080-exec-2] c.upcome.user.mapper.UserMapper.addUser  : ==>  Preparing: insert into user (id,name ,sex ) value(?,? ,? ) 
+2021-02-28 10:47:57.060 DEBUG 20292 --- [http-nio-8080-exec-2] c.upcome.user.mapper.UserMapper.addUser  : ==> Parameters: 3(String), 赵六(String), 女(String)
+2021-02-28 10:47:57.116 ERROR 20292 --- [http-nio-8080-exec-2] com.upcome.user.service.UserServiceImpl  : 用户模块service层：添加用户方法 addUser ==出现异常==org.springframework.dao.DuplicateKeyException: 
+### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '3' for key 'PRIMARY'
+### The error may involve com.upcome.user.mapper.UserMapper.addUser-Inline
+### The error occurred while setting parameters
+### SQL: insert into user (id,name          ,sex                    )         value(?,?          ,?                        )
+### Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '3' for key 'PRIMARY'
+; Duplicate entry '3' for key 'PRIMARY'; nested exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '3' for key 'PRIMARY'
+2021-02-28 10:48:16.367  INFO 20292 --- [http-nio-8080-exec-4] c.upcome.user.controller.UserController  : --------用户模块Controller：添加用户方法 addUser 
+2021-02-28 10:48:16.367  INFO 20292 --- [http-nio-8080-exec-4] c.upcome.user.controller.UserController  : 用户模块Controller：查询全部用户方法 selectUserAll==获取数据成功==User{id='4', name='赵六', sex='女', age='null'}
+2021-02-28 10:48:16.369 DEBUG 20292 --- [http-nio-8080-exec-4] c.upcome.user.mapper.UserMapper.addUser  : ==>  Preparing: insert into user (id,name ,sex ) value(?,? ,? ) 
+2021-02-28 10:48:16.370 DEBUG 20292 --- [http-nio-8080-exec-4] c.upcome.user.mapper.UserMapper.addUser  : ==> Parameters: 4(String), 赵六(String), 女(String)
+2021-02-28 10:48:16.372 DEBUG 20292 --- [http-nio-8080-exec-4] c.upcome.user.mapper.UserMapper.addUser  : <==    Updates: 1
+2021-02-28 16:07:59.682  WARN 20292 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h3m56s824ms280µs400ns).

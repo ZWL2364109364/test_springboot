@@ -1,0 +1,32 @@
+2021-02-22 10:14:44.056  INFO 19376 --- [main] com.upcome.TestSpringBootApplication     : Starting TestSpringBootApplication using Java 1.8.0_201 on LAPTOP-F9IFBC8A with PID 19376 (F:\IdeaWorkSpaces\test_springboot\target\classes started by 张文龙 in F:\IdeaWorkSpaces\test_springboot)
+2021-02-22 10:14:44.058  INFO 19376 --- [main] com.upcome.TestSpringBootApplication     : No active profile set, falling back to default profiles: default
+2021-02-22 10:14:44.735  INFO 19376 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-02-22 10:14:44.740  INFO 19376 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-22 10:14:44.740  INFO 19376 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-22 10:14:44.742  INFO 19376 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.18] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2021-02-22 10:14:44.742  INFO 19376 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.18] using APR version [1.6.5].
+2021-02-22 10:14:44.743  INFO 19376 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-02-22 10:14:44.743  INFO 19376 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-02-22 10:14:44.746  INFO 19376 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1  11 Sep 2018]
+2021-02-22 10:14:44.818  INFO 19376 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-02-22 10:14:44.818  INFO 19376 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 713 ms
+2021-02-22 10:14:45.050  INFO 19376 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-22 10:14:45.128  WARN 19376 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-02-22 10:14:45.254  INFO 19376 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-02-22 10:14:45.261  INFO 19376 --- [main] com.upcome.TestSpringBootApplication     : Started TestSpringBootApplication in 1.562 seconds (JVM running for 2.995)
+2021-02-22 10:15:08.442  INFO 19376 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-22 10:15:08.442  INFO 19376 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-02-22 10:15:08.443  INFO 19376 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-02-22 10:15:08.454  INFO 19376 --- [http-nio-8080-exec-1] c.upcome.user.controller.UserController  : --------用户模块：selectUserAll 查询全部用户方法--------
+2021-02-22 10:15:08.464  INFO 19376 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-02-22 10:15:08.466  WARN 19376 --- [http-nio-8080-exec-1] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2021-02-22 10:15:08.583  INFO 19376 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-02-22 10:15:08.642 ERROR 19376 --- [http-nio-8080-exec-1] com.upcome.user.service.UserServiceImpl  : 查询全部用户方法：selectUserAll == 出现异常 == org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: Table 'testmybatis.users' doesn't exist
+### The error may exist in file [F:\IdeaWorkSpaces\test_springboot\target\classes\mapping\UserMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: select * from users
+### Cause: java.sql.SQLSyntaxErrorException: Table 'testmybatis.users' doesn't exist
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: Table 'testmybatis.users' doesn't exist
+2021-02-22 10:15:08.642  INFO 19376 --- [http-nio-8080-exec-1] c.upcome.user.controller.UserController  : 用户模块：selectUserAll 查询全部用户方法==获取数据==[]

@@ -1,0 +1,28 @@
+# 创建数据源
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    password: abcdef
+    url: jdbc:mysql://127.0.0.1:3306/testmybatis?serverTimezone=UTC&allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8
+    username: root
+
+
+# 创建Mybatis的配置, 扫描 resources/mapping 下的映射器
+#自理解
+#1. 省略了Mybatis配置文件和简化了 与spring的整合  ， 将Mybatis的配置与Spring的配置放到了一块
+#2.  读取Mapper 文件形成sqlsessonfactry
+mybatis:
+  mapper-locations: classpath:mapping/*Mapper.xml
+
+
+logging:
+  file:
+    name: ./log/core.log      #指定相对路径：log输出位置
+  level:                      #指定包输出日志级别
+    com:
+      upcome:
+        user :
+          mapper : debug
+  
+
+
