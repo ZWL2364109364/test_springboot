@@ -80,7 +80,52 @@ public class UserController {
         return res+"";
     }
 
+    /**
+     *2021-02-25 z.w.l add
+     * 3. 修改用户信息方法
+     */
+    @ResponseBody
+    @PutMapping(value = "/updateUser")
+    public String updateUser(@RequestBody User user){
+        log.info("--------用户模块：updateUser修改用户信息方法--------");
+        int res=0;
+        try {
+            if(user!=null && !user.getId().equals("")){
+                log.info("用户模块：updateUser修改用户信息方法==获取数据成功=="+user);
+                res=service.updateUser(user);
+            }else{
+                log.info("用户模块：updateUser修改用户信息方法==获取数据失败=="+user);
+            }
+        } catch (Exception e) {
+            log.error("用户模块：updateUser修改用户信息方法==出现异常=="+e);
+        }
 
+        return res+"";
+    }
+
+
+    /**
+     *2021-02-27 z.w.l add
+     * 4. 删除用户方法
+     */
+    @ResponseBody
+    @DeleteMapping(value = "/deleteUser")
+    public  String deleteUser(@RequestBody User user){
+        log.info("--------用户模块Controller：删除用户方法deleteUser--------");
+        int res=0;
+        try {
+            if(user!=null && user.getId()!=null){
+                log.info("用户模块Controller：删除用户方法deleteUser==获取数据成功=="+user);
+                res=service.deleteUser(user);
+            }else {
+                log.info("用户模块Controller：删除用户方法deleteUser==获取数据失败=="+user);
+            }
+        } catch (Exception e) {
+            log.error("用户模块Controller：删除用户方法deleteUser==出现异常=="+e);
+        }
+
+        return  res+"";
+    }
 
 }
 

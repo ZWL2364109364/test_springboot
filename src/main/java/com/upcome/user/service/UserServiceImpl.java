@@ -55,4 +55,34 @@ public class UserServiceImpl implements IUserService{
 
         return res;
     }
+
+    /**
+     *2021-02-25 z.w.l add
+     * 3. 修改用户信息方法
+     */
+    @Override
+    public int updateUser(User user) {
+        int res=0;
+        try {
+            res=mapper.updateUser(user);
+        } catch (Exception e) {
+            log.error("用户模块service层：updateUser 修改用户信息方法==出现异常=="+e);
+        }
+        return res;
+    }
+
+    /**
+     *2021-02-27 z.w.l add
+     * 4. 删除用户方法
+     */
+    @Override
+    public int deleteUser(User user) {
+        int res=0;
+        try {
+            res=mapper.deleteUser(user);
+        } catch (Exception e) {
+            log.error("用户模块service：删除用户方法deleteUser==出现异常=="+e);
+        }
+        return res;
+    }
 }
