@@ -28,4 +28,18 @@
             )
     </insert>
 
+    <!--2021-02-25 z.w.l add 修改用户 -->
+    <update id="updateUser" parameterType="com.upcome.user.entity.User">
+        update user set name=#{user.name}
+        <if test="user.sex!=null">,sex = #{user.sex}</if>
+        <if test="user.age!=null">,age = #{user.age}</if>
+         where id=#{user.id}
+    </update>
+
+    <!--2021-02-27 z.w.l add 删除用户-->
+    <delete id="deleteUser" parameterType="com.upcome.user.entity.User" >
+        delete from user where id=#{user.id}
+    </delete>
+
+
 </mapper>
