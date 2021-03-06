@@ -3,8 +3,9 @@ spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     password: abcdef
-    url: jdbc:mysql://127.0.0.1:3306/testmybatis?serverTimezone=UTC&allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8
     username: root
+    url: jdbc:mysql://127.0.0.1:3306/testmybatis?serverTimezone=UTC&allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8
+
 
 
 # 创建Mybatis的配置, 扫描 resources/mapping 下的映射器
@@ -22,6 +23,8 @@ logging:
     com:
       upcome:
         user :
+          mapper : debug
+        student :
           mapper : debug
   
 

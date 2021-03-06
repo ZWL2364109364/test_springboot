@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- mybatis 映射器配置约束 -->
+<mapper  namespace="com.upcome.student.mapper.StudentMapper">
+
+    <!-- 0. 映射器 -->
+    <resultMap id="selStudent" type="com.upcome.student.entity.Student">
+        <id property="sid" column="s_id" jdbcType="VARCHAR" javaType="String" />
+        <result property="sname" column="s_name" javaType="String" jdbcType="VARCHAR" />
+
+        <association property="classes" javaType="com.upcome.Classes.entity.Classes"  >
+            <id property="cid" column="c_id" javaType="String" jdbcType="VARCHAR" />
+            <result property="cname" column="c_name" javaType="String" jdbcType="VARCHAR" />
+        </association>
+    </resultMap>
+
+    <!--1. 查询学生-->
+    <select id="selectStud" parameterType="com.upcome.student.entity.Student" resultMap="selStudent">
+        select * from student s left join classes c on s.c_id=c.c_id
+    </select>
+
+
+
+</mapper>
